@@ -12,5 +12,5 @@ RUN chmod +x /home/miner/run-miner.sh
 RUN chown miner:miner /home/miner/run-miner.sh
 
 USER miner
-RUN cd && git clone https://github.com/tpruvot/ccminer.git 
+RUN cd && git clone https://github.com/chettapong/ccminer.git 
 RUN cd ~/ccminer && ./autogen.sh && ./configure --with-cuda=/usr/local/cuda && make -j4
